@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vexia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Brand Logo">
+        </div>
+        
+    
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="shop-now">
+            <a href="#" class="shop-button">Shop Now</a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Introducing Our Fall Collection</h1>
+                <a href="#" class="shop-button">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/snapedit_1726818241042.png" alt="XYZ Product">
+            </div>
+        </section>
+        
+
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-1.png" alt="Product 1">
+                        <div class="view-product">View Product</div>
+                    </div>
+                    <div class="product-details">
+                        <p class="productName">Women 2-Piece Cord-set with insert Pockets</p>
+                        <p>$49.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-2.png" alt="Product 2">
+                        <div class="view-product">View Product</div>
+                    </div>
+                    <p class="productName">Men Graphic Print T-Shirt</p>
+                    <p>$59.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-3.png" alt="Product 3">
+                        <div class="view-product">View Product</div>
+                    </div>
+                    <p class="productName">Women 3-Piece Cord-Set</p>
+                    <p>$69.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-4.png" alt="Product 4">
+                        <div class="view-product">View Product</div>
+                    </div>
+                    <p class="productName">Full Sleeves Shirt</p>
+                    <p>$79.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div id="cart-notification">Item added to cart!</div>
+
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#"><img src="images/social/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/social/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/social/insta.png" alt="Instagram"></a>
+                <a href="#"><img src="images/social/linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script >
+           function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+    </script>
+
+</body>
+</html>
